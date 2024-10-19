@@ -37,7 +37,6 @@ class _OnBoardingThirdState extends State<OnBoardingThird> {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsFlutterBinding.ensureInitialized();
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
@@ -96,54 +95,54 @@ class _OnBoardingThirdState extends State<OnBoardingThird> {
               SizedBox(
                 height: size.height * 0.02,
               ),
-              Expanded(
-                child: Center(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      TextButton(
-                          onPressed: () {
-                            // Navigator.push(context,
-                            //     MaterialPageRoute(builder: (context) {
-                            //   return const SignUp();
-                            // }));//TODO:signup page to route to
-                          },
-                          child: const Text(
-                            'تخطي',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          )),
-                      RichText(
-                        text: TextSpan(
-                          text: '●',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.grey.shade200),
-                          children: <TextSpan>[
-                            TextSpan(
-                                text: '●',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey.shade200)),
-                            TextSpan(
-                                text: '●',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.grey.shade700)),
-                          ],
-                        ),
-                      ),
-                      TextButton(
-                          onPressed: () {
-                            Navigator.of(context).push(_createRoute());
-                          },
-                          child: const Text(
-                            'التالي',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ))
-                    ],
-                  ),
-                ),
-              ),
+              // Expanded(
+              //   child: Center(
+              //     child: Row(
+              //       mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //       children: [
+              //         TextButton(
+              //             onPressed: () {
+              //               // Navigator.push(context,
+              //               //     MaterialPageRoute(builder: (context) {
+              //               //   return const SignUp();
+              //               // }));//TODO:signup page to route to
+              //             },
+              //             child: const Text(
+              //               'تخطي',
+              //               style: TextStyle(fontWeight: FontWeight.bold),
+              //             )),
+              //         RichText(
+              //           text: TextSpan(
+              //             text: '●',
+              //             style: TextStyle(
+              //                 fontWeight: FontWeight.bold,
+              //                 color: Colors.grey.shade200),
+              //             children: <TextSpan>[
+              //               TextSpan(
+              //                   text: '●',
+              //                   style: TextStyle(
+              //                       fontWeight: FontWeight.bold,
+              //                       color: Colors.grey.shade200)),
+              //               TextSpan(
+              //                   text: '●',
+              //                   style: TextStyle(
+              //                       fontWeight: FontWeight.bold,
+              //                       color: Colors.grey.shade700)),
+              //             ],
+              //           ),
+              //         ),
+              //         TextButton(
+              //             onPressed: () {
+              //               Navigator.of(context).push(_createRoute());
+              //             },
+              //             child: const Text(
+              //               'التالي',
+              //               style: TextStyle(fontWeight: FontWeight.bold),
+              //             ))
+              //       ],
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         )),
